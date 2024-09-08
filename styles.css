@@ -1,0 +1,47 @@
+@import url('https://fonts.googeapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #595DB8;
+
+}
+
+.sortable-list {
+    background: rgb(118, 92, 142);
+    width: 445px;
+    padding: 30px 35px 20px;
+}
+
+.sortable-list .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-bottom: 11px;
+    cursor: all-scroll;
+}
+
+.item .details img {
+    width: 43px;
+    height: 43px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.item.dragging :where(.details, i) {
+    opacity: 0;
+}
