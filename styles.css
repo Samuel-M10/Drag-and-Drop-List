@@ -16,12 +16,13 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #595DB8;
+    background: #212121;
+    color: #ccc;
 
 }
 
 .sortable-list {
-    background: rgb(118, 92, 142);
+    background: rgb(22, 20, 20);
     width: 445px;
     padding: 30px 35px 20px;
 }
@@ -33,6 +34,12 @@ body {
     border: 1px solid #ccc;
     margin-bottom: 11px;
     cursor: all-scroll;
+}
+
+.item .details span {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
 }
 
 .item .details img {
